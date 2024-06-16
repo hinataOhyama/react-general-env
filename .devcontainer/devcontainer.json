@@ -1,0 +1,46 @@
+{
+  "name": "project-name",
+  "dockerComposeFile": [
+      "../docker-compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/usr/src",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "davidanson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-rename-tag",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-pull-request-github",
+        "gruntfuggly.todo-tree",
+        "infarkt.css-to-jss",
+        "kamikillerto.vscode-colorize",
+        "mosapride.zenkaku",
+        "ms-ceintl.vscode-language-pack-ja",
+        "orta.vscode-jest",
+        "pkief.material-icon-theme",
+        "streetsidesoftware.code-spell-checker",
+        "xabikos.javascriptsnippets",
+        "yzhang.markdown-all-in-one",
+      ],
+      "settings": {
+        "files.encoding": "utf8",
+        "files.eol": "\\n",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        }
+      }
+    }
+  },
+  "forwardPorts": [3000],
+  "remoteUser": "node"
+}
